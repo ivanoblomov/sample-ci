@@ -25,6 +25,8 @@ The simplest CI example for Node.js
     If all is well, you should see output similar to this:
 
     ```bash
+    $ npm test
+    
     > test
     > jest
 
