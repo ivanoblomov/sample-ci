@@ -10,13 +10,27 @@ The simplest Continuous-Integration example for Node.js
     brew install npm
     ```
 
-2. Install Jest (a popular JavaScript Testing Framework):
+2. Configure `package.json` for the desired testing framework. To use Jest, for example, add the following:
 
     ```bash
-    npm install --save-dev jest
+    "devDependencies": {
+      "jest": "^29.7"
+    }
     ```
 
-3. Check the install by running the tests:
+3. Install the test framework configured in 2:
+
+    ```bash
+    npm install
+    ```
+
+4. Perform a clean install:
+
+    ```bash
+    npm ci
+    ```
+
+5. Check the install by running the tests:
 
     ```bash
     npm test
@@ -26,7 +40,7 @@ The simplest Continuous-Integration example for Node.js
 
     ```bash
     $ npm test
-    
+
     > test
     > jest
 
